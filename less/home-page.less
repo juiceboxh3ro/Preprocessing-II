@@ -1,3 +1,23 @@
+header {
+  border-bottom: dashed #c0c0c0 2px;
+
+  .second-layer {
+    width: 800px;
+    margin: 0 auto;
+    
+    h2 {
+      padding-top: 20px;
+    }
+    p {
+      padding-bottom: 20px;
+    }
+
+    @media @mobile {
+      width: 90%;
+    }
+  }
+}
+
 .home {
 
   .content-section {
@@ -11,16 +31,37 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
 
+      @media @mobile {
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 0;
+      }
+    }
+    
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
+
+    @media @mobile {
+      width: 90%;
+      margin: 30px auto;
+    }
+
   }
 
   .inverse-content {
@@ -36,6 +77,12 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
@@ -44,6 +91,10 @@
 
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      margin: 20px auto 30px;
+      width: 90%;
     }
   }
 
@@ -56,6 +107,37 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+      }
+    }
+
+    .btn {
+      .sign-up-btn(@button-bg, white, 2rem);
+      transition: 0.25s ease-in;
+      
+      &:hover {
+        cursor: pointer;
+        background-color: lighten(@eastern-blue, 10%);
+        transform: scale(1.05);
+      }
+
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    @media @mobile {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+      
+    .content-form .freestyle .the-form {
+      .third {
+        background-color: #333;
+      }
     }
   }
 }// home

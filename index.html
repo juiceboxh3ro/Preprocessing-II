@@ -1,8 +1,9 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>Fun Bus Travel Agency - Solution</title>
 
@@ -16,7 +17,30 @@
 
 <body>
 
+  <nav>
+    <div class="second-layer">
+      <div class="nav-logo-text">
+        <a href="index.html"><h2>Fun Bus</h2></a>
+      </div>
   
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="second-layer">
+      <img src="img/fun-bus.jpg" alt="Fun Bus logo of a toy bus in the sand.">
+      <h2>Welcome to Fun Bus!</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quibusdam veritatis minima pariatur corrupti. Obcaecati cumque eaque ducimus non illo amet sint consequuntur natus, deleniti quas, necessitatibus id repellat fugiat! Magni, dolorem maiores consequuntur cum architecto laudantium non minus quisquam?</p>
+    </div>
+  </header>
      
   <div class="container home">
    
@@ -46,6 +70,7 @@
       <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
       <img src="img/destination.jpg" alt="Second slide">
     </section>
+
     <section class="content-pick">
 
       <div class="destination">
@@ -62,6 +87,36 @@
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
+      </div>
+    </section>
+
+    <section class="content-form">
+      <div class="freestyle">
+        <h4>...or Make Your Own!</h4>
+        <form method="post" action="#">
+          <div class="freestyle">
+            <div class="field third">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Your name">
+            </div>
+            <div class="field third">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" placeholder="Your email address">
+            </div>
+            <div class="field third">
+              <label for="phone">Phone</label>
+              <input type="number" name="phone" id="phone" placeholder="Your phone number">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="4" placeholder="Your lovely message"></textarea>
+            </div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" class="primary" /></li>
+            <li><input type="reset" value="Reset" /></li>
+          </ul>
+        </form>
       </div>
     </section>
   </div><!-- container -->
