@@ -225,7 +225,7 @@ nav .second-layer .nav-links ul li {
   padding: 20px;
 }
 header {
-  border-bottom: dashed #c0c0c0 2px;
+  border-bottom: dashed #C0C0C0 2px;
 }
 header .second-layer {
   width: 800px;
@@ -359,6 +359,50 @@ header .second-layer p {
     flex-direction: column;
   }
 }
-.home .content-pick .content-form .freestyle .the-form .third {
-  background-color: #333;
+section.content-form {
+  border-top: dashed 2px #C0C0C0;
+  padding-top: 20px;
+}
+section.content-form .freestyle form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.content-form .freestyle form input {
+  width: 48%;
+  font-size: 1.8rem;
+  line-height: 2;
+  padding-left: 5px;
+  margin-bottom: 20px;
+  border: #C0C0C0 1px solid;
+  border-radius: 3px;
+}
+section.content-form .freestyle form input::-webkit-outer-spin-button,
+section.content-form .freestyle form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+section.content-form .freestyle form input[type=number] {
+  -moz-appearance: textfield;
+}
+section.content-form .freestyle form input[type="email"],
+section.content-form .freestyle form input[type="number"] {
+  background-color: #f4f4f4;
+}
+section.content-form .freestyle form input[type="submit"] {
+  background-color: #C0C0C0;
+  width: 80%;
+  margin: 0 auto 20px;
+}
+section.content-form .freestyle form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #b3b3b3;
+}
+section.content-form .freestyle form textarea {
+  width: 90%;
+  margin: 0 auto 20px;
+  padding-left: 5px;
+  font-size: 1.8rem;
+  line-height: 2;
+  border: #C0C0C0 1px solid;
+  border-radius: 3px;
 }

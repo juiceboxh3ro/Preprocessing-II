@@ -1,0 +1,52 @@
+section.content-form {
+  border-top: dashed 2px @silver;
+  padding-top: 20px;
+
+  .freestyle form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    input {
+      width: 48%;
+      font-size: 1.8rem;
+      line-height: 2;
+      padding-left: 5px;
+      margin-bottom: 20px;
+      border: @silver 1px solid;
+      border-radius: 3px;
+      
+      &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      &[type=number] {
+        -moz-appearance: textfield;
+      }
+
+      &[type="email"], &[type="number"] {
+        background-color: #f4f4f4;
+      }
+
+      &[type="submit"] {
+        background-color: @silver;
+        width: 80%;
+        margin: 0 auto 20px;
+        
+        &:hover {
+          cursor: pointer;
+          background-color: darken(@silver, 5%);
+        }
+      }
+
+    }
+    textarea {
+      width: 90%;
+      margin: 0 auto 20px;
+      padding-left: 5px;
+      font-size: 1.8rem;
+      line-height: 2;
+      border: @silver 1px solid;
+      border-radius: 3px;
+    }
+  }
+}
