@@ -386,16 +386,21 @@ section.content-form .freestyle form input[type=number] {
 }
 section.content-form .freestyle form input[type="email"],
 section.content-form .freestyle form input[type="number"] {
-  background-color: #f4f4f4;
+  background-color: #d4f5fa;
 }
 section.content-form .freestyle form input[type="submit"] {
-  background-color: #C0C0C0;
+  background-color: #17A2B8;
+  color: #fff;
   width: 80%;
   margin: 0 auto 20px;
+  border: none;
+  border-radius: 15px;
+  transition: 0.25s ease-in;
 }
 section.content-form .freestyle form input[type="submit"]:hover {
   cursor: pointer;
-  background-color: #b3b3b3;
+  background-color: #1fc8e3;
+  transform: scale(1.05);
 }
 section.content-form .freestyle form textarea {
   width: 90%;
