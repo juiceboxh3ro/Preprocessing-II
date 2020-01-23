@@ -7,5 +7,17 @@
   width: 80%;
   padding: 15px 30px;
   text-align: center;
+  border: none;
   border-radius: 15px;
+  transition: 0.25s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lighten(@eastern-blue, 10%);
+    transform: scale(1.05);
+  }
+
+  @media @mobile {
+    width: 100%;
+  }
 }
